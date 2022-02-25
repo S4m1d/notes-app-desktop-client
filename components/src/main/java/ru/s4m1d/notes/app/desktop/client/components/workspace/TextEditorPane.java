@@ -1,0 +1,13 @@
+package ru.s4m1d.notes.app.desktop.client.components.workspace;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class TextEditorPane extends JTextPane {
+    public void initialize(){
+        this.setCaretPosition(0);
+        this.setEditable(true);
+        this.setForeground(new Color(116, 250, 0));
+        this.setBackground(new Color(94, 88, 80));
+    }
+}
