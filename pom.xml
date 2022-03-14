@@ -17,6 +17,7 @@
         <module>business-impl</module>
         <module>core</module>
         <module>core-api</module>
+        <module>util</module>
     </modules>
 
     <properties>

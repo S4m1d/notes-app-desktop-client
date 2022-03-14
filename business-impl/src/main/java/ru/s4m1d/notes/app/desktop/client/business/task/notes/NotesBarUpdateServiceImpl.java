@@ -1,7 +1,8 @@
-package ru.s4m1d.notes.app.desktop.client.business.task;
+package ru.s4m1d.notes.app.desktop.client.business.task.notes;
 
+import ru.s4m1d.notes.app.desktop.client.business.task.NewComponentEvent;
+import ru.s4m1d.notes.app.desktop.client.business.task.datamodel.Note;
 import ru.s4m1d.notes.app.desktop.client.components.choice.bar.NoteTab;
-import ru.s4m1d.notes.app.desktop.client.components.choice.bar.NotesBarScrollPane;
 import ru.s4m1d.notes.app.desktop.client.components.choice.bar.NotesPane;
 import ru.s4m1d.notes.app.desktop.client.core.Observer;
 
@@ -19,10 +20,10 @@ public class NotesBarUpdateServiceImpl extends Observer<NotesReceivedEvent> {
 
     @Override
     public void processEvent(NotesReceivedEvent notesReceivedEvent) {
-        List<File> noteFiles = notesReceivedEvent.getNotes();
-        for (File noteFile:noteFiles){
+        List<Note> notes = notesReceivedEvent.getNotes();
+        for (Note note:notes){
             NoteTab noteTab = new NoteTab();
-            noteTab.setNotesName(noteFile.getName());
+            noteTab.setNotesName(note.getName());
             notesPane.add(noteTab);
             noteTab.initialize();
         }
