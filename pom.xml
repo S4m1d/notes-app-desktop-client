@@ -11,11 +11,31 @@
     <modules>
         <module>app</module>
         <module>components</module>
+        <module>system-api</module>
+        <module>system-impl</module>
+        <module>business-api</module>
+        <module>business-impl</module>
+        <module>core</module>
+        <module>core-api</module>
     </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.5</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
 </project>

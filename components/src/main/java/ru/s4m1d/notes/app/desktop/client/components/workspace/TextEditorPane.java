@@ -7,7 +7,7 @@ public class TextEditorPane extends JTextPane {
     public void initialize(){
         this.setCaretPosition(0);
         this.setEditable(true);
-        this.setForeground(new Color(116, 250, 0));
+        this.setForeground(new Color(246, 239, 229));
         this.setBackground(new Color(94, 88, 80));
     }
 }
