@@ -25,6 +25,7 @@ public class NotesBarLayeredPane extends JPanel {
         CustomScrollBarUi customScrollBarUi = new CustomScrollBarUi();
         verticalScrollbar.setUI(customScrollBarUi);
         verticalScrollbar.setOpaque(false);
+        verticalScrollbar.setPreferredSize(new Dimension(10,200));
         layeredPane.setLayer(verticalScrollbar, JLayeredPane.PALETTE_LAYER);
 
         layeredPane.add(verticalScrollbar, JLayeredPane.PALETTE_LAYER);
