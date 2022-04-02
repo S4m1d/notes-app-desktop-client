@@ -27,8 +27,6 @@ public class AppRunner {
         NotesPane notesPane = new NotesPane();
         notesPane.initialize();
 
-//        NotesBarScrollPane notesBarScrollPane = new NotesBarScrollPane(notesPane);
-//        notesBarScrollPane.initialize();
         NotesBarLayeredPane notesBarLayeredPane = new NotesBarLayeredPane(notesPane);
         notesBarLayeredPane.initialize();
 
@@ -36,7 +34,6 @@ public class AppRunner {
         menuBar.initialize();
 
         mainFrame.setJMenuBar(menuBar);
-//        mainFrame.getContentPane().add(notesBarScrollPane, BorderLayout.WEST);
         mainFrame.getContentPane().add(notesBarLayeredPane, BorderLayout.WEST);
         mainFrame.getContentPane().add(workspaceScrollPane);
 

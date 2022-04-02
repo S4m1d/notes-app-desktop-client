@@ -1,8 +1,6 @@
 package ru.s4m1d.notes.app.desktop.client.components.choice.bar;
 
 import ru.s4m1d.notes.app.desktop.client.components.layout.CustomScrollPaneLayout;
-import ru.s4m1d.notes.app.desktop.client.components.layout.NoInsetsScrollPaneLayout;
-import ru.s4m1d.notes.app.desktop.client.components.painting.CustomScrollBarUi;
 import ru.s4m1d.notes.app.desktop.client.components.painting.CustomScrollPaneUi;
 
 import javax.accessibility.AccessibleContext;
