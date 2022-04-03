@@ -36,7 +36,6 @@ public class NotesBarLayeredPane extends JPanel {
         notesBarScrollPane.setVisible(true);
         notesBarScrollPane.remove(notesBarScrollPane.getVerticalScrollBar());
         notesBarScrollPane.boundWithVerticalScrollBar(verticalScrollbar);
-        notesBarScrollPane.getHorizontalScrollBar().setOpaque(false);
 
         setLayout(new BorderLayout());
         add(layeredPane, BorderLayout.CENTER);

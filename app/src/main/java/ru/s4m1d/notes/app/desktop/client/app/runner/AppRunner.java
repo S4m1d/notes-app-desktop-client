@@ -8,6 +8,7 @@ import ru.s4m1d.notes.app.desktop.client.components.MenuBar;
 import ru.s4m1d.notes.app.desktop.client.components.choice.bar.NotesBarLayeredPane;
 import ru.s4m1d.notes.app.desktop.client.components.choice.bar.NotesPane;
 import ru.s4m1d.notes.app.desktop.client.components.workspace.TextEditorPane;
+import ru.s4m1d.notes.app.desktop.client.components.workspace.WorkSpaceLayeredPane;
 import ru.s4m1d.notes.app.desktop.client.components.workspace.WorkspaceScrollPane;
 
 import javax.swing.*;
@@ -21,8 +22,9 @@ public class AppRunner {
         TextEditorPane textEditorPane = new TextEditorPane();
         textEditorPane.initialize();
 
-        WorkspaceScrollPane workspaceScrollPane = new WorkspaceScrollPane(textEditorPane);
+        WorkSpaceLayeredPane workspaceScrollPane = new WorkSpaceLayeredPane(textEditorPane);
         workspaceScrollPane.initialize();
+
 
         NotesPane notesPane = new NotesPane();
         notesPane.initialize();
