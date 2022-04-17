@@ -1,6 +1,7 @@
-package ru.s4m1d.notes.app.desktop.client.business.task.notes.mapper;
+package ru.s4m1d.notes.app.desktop.client.business.notes.mapper;
 
-import ru.s4m1d.notes.app.desktop.client.business.task.datamodel.Note;
+import ru.s4m1d.notes.app.desktop.client.business.datamodel.content.FileContent;
+import ru.s4m1d.notes.app.desktop.client.business.datamodel.note.Note;
 import ru.s4m1d.notes.app.desktop.client.util.StringUtil;
 
 import java.io.File;
@@ -13,6 +14,7 @@ public class FilesToNotesMapper {
         for (File file: files) {
             Note note = Note.builder()
                     .name(StringUtil.cutExtension(file.getName()))
+                    .content(new FileContent(file))
                     .build();
             result.add(note);
         }

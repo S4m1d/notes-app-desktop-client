@@ -1,9 +1,8 @@
-package ru.s4m1d.notes.app.desktop.client.business.task.notes;
+package ru.s4m1d.notes.app.desktop.client.business.notes;
 
-import ru.s4m1d.notes.app.desktop.client.business.task.datamodel.Note;
+import ru.s4m1d.notes.app.desktop.client.business.datamodel.note.Note;
 import ru.s4m1d.notes.app.desktop.client.core.Event;
 
-import java.io.File;
 import java.util.List;
 
 public class NotesReceivedEvent implements Event {

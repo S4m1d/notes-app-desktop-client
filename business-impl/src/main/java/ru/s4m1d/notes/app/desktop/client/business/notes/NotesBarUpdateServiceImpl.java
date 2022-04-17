@@ -1,12 +1,11 @@
-package ru.s4m1d.notes.app.desktop.client.business.task.notes;
+package ru.s4m1d.notes.app.desktop.client.business.notes;
 
 import ru.s4m1d.notes.app.desktop.client.business.task.NewComponentEvent;
-import ru.s4m1d.notes.app.desktop.client.business.task.datamodel.Note;
+import ru.s4m1d.notes.app.desktop.client.business.datamodel.note.Note;
 import ru.s4m1d.notes.app.desktop.client.components.choice.bar.NoteTab;
 import ru.s4m1d.notes.app.desktop.client.components.choice.bar.NotesPane;
 import ru.s4m1d.notes.app.desktop.client.core.Observer;
 
-import java.io.File;
 import java.util.List;
 
 public class NotesBarUpdateServiceImpl extends Observer<NotesReceivedEvent> {

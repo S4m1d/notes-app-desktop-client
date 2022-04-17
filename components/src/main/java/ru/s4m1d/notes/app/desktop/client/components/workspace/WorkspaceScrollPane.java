@@ -1,5 +1,7 @@
 package ru.s4m1d.notes.app.desktop.client.components.workspace;
 
+import lombok.Getter;
+import lombok.Setter;
 import ru.s4m1d.notes.app.desktop.client.components.choice.bar.NotesBarScrollPane;
 import ru.s4m1d.notes.app.desktop.client.components.layout.CustomScrollPaneLayout;
 import ru.s4m1d.notes.app.desktop.client.components.painting.CustomScrollBarUi;
@@ -13,8 +15,17 @@ import javax.swing.event.ChangeListener;
 import java.awt.*;
 
 public class WorkspaceScrollPane extends JScrollPane {
-    public WorkspaceScrollPane(JComponent component){
-        super(component,ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+    @Getter
+    @Setter
+    private TextEditorPane textEditorPane;
+
+    public WorkspaceScrollPane() {
+        this(new TextEditorPane());
+    }
+
+    public WorkspaceScrollPane(TextEditorPane textEditorPane){
+        super(textEditorPane,ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+        this.textEditorPane = textEditorPane;
     }
     public void initialize(){
         setPreferredSize(new Dimension(1720,1080));

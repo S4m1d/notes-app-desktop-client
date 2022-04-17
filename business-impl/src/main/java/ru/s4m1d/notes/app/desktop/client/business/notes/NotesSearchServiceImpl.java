@@ -1,8 +1,8 @@
-package ru.s4m1d.notes.app.desktop.client.business.task.notes;
+package ru.s4m1d.notes.app.desktop.client.business.notes;
 
 import ru.s4m1d.notes.app.desktop.client.business.task.NotesSearchService;
-import ru.s4m1d.notes.app.desktop.client.business.task.datamodel.Note;
-import ru.s4m1d.notes.app.desktop.client.business.task.notes.mapper.FilesToNotesMapper;
+import ru.s4m1d.notes.app.desktop.client.business.datamodel.note.Note;
+import ru.s4m1d.notes.app.desktop.client.business.notes.mapper.FilesToNotesMapper;
 import ru.s4m1d.notes.app.desktop.client.system.file.FileScanner;
 import ru.s4m1d.notes.app.desktop.client.system.file.FileScannerImpl;
 

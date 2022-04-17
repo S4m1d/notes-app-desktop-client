@@ -1,5 +1,6 @@
 package ru.s4m1d.notes.app.desktop.client.components.workspace;
 
+import lombok.Getter;
 import ru.s4m1d.notes.app.desktop.client.components.layout.CustomLayeredPaneLayout;
 import ru.s4m1d.notes.app.desktop.client.components.painting.CustomScrollBarUi;
 
@@ -7,6 +8,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class WorkSpaceLayeredPane extends JPanel {
+    @Getter
     private WorkspaceScrollPane workspaceScrollPane;
     private JLayeredPane layeredPane;
     private JScrollBar verticalScrollBar;
@@ -14,7 +16,7 @@ public class WorkSpaceLayeredPane extends JPanel {
 
     public WorkSpaceLayeredPane(JComponent component) {
         workSpaceSettings = WorkSpaceSettings.get();
-        workspaceScrollPane = new WorkspaceScrollPane(component);
+        workspaceScrollPane = new WorkspaceScrollPane((TextEditorPane) component);
         workspaceScrollPane.initialize();
         layeredPane = new JLayeredPane();
         verticalScrollBar = new JScrollBar(Adjustable.VERTICAL);
