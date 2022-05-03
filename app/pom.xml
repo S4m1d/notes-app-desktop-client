@@ -24,7 +24,7 @@
         </dependency>
         <dependency>
             <groupId>ru.s4m1d</groupId>
-            <artifactId>business-impl</artifactId>
+            <artifactId>controller-impl</artifactId>
             <version>${parent.version}</version>
         </dependency>
     </dependencies>

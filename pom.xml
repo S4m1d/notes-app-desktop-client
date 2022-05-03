@@ -13,8 +13,8 @@
         <module>components</module>
         <module>system-api</module>
         <module>system-impl</module>
-        <module>business-api</module>
-        <module>business-impl</module>
+        <module>controller-api</module>
+        <module>controller-impl</module>
         <module>core</module>
         <module>core-api</module>
         <module>util</module>

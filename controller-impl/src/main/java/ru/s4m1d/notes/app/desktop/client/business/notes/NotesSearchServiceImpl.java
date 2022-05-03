@@ -16,6 +16,7 @@ public class NotesSearchServiceImpl implements NotesSearchService {
     public NotesSearchServiceImpl(){
         fileScanner = new FileScannerImpl();
     }
+
     @Override
     public List<Note> searchForNotes() {
         List<Note> notes = new ArrayList<>();
