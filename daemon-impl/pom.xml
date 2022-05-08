@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>app</artifactId>
+    <artifactId>daemon-impl</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -19,12 +19,27 @@
     <dependencies>
         <dependency>
             <groupId>ru.s4m1d</groupId>
+            <artifactId>daemon-api</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ru.s4m1d</groupId>
+            <artifactId>system-impl</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ru.s4m1d</groupId>
+            <artifactId>core</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ru.s4m1d</groupId>
             <artifactId>components</artifactId>
             <version>${parent.version}</version>
         </dependency>
         <dependency>
             <groupId>ru.s4m1d</groupId>
-            <artifactId>daemon-impl</artifactId>
+            <artifactId>util</artifactId>
             <version>${parent.version}</version>
         </dependency>
     </dependencies>

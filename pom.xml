@@ -13,11 +13,12 @@
         <module>components</module>
         <module>system-api</module>
         <module>system-impl</module>
-        <module>controller-api</module>
-        <module>controller-impl</module>
+        <module>daemon-api</module>
+        <module>daemon-impl</module>
         <module>core</module>
         <module>core-api</module>
         <module>util</module>
+        <module>model</module>
     </modules>
 
     <properties>
