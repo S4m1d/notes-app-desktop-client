@@ -1,4 +1,4 @@
-package ru.s4m1d.notes.app.desktop.client.controller.notes;
+package ru.s4m1d.notes.app.desktop.client.daemon.notes;
 
 import ru.s4m1d.notes.app.desktop.client.model.note.Note;
 import ru.s4m1d.notes.app.desktop.client.core.Event;

@@ -1,4 +1,4 @@
-package ru.s4m1d.notes.app.desktop.client.controller.task;
+package ru.s4m1d.notes.app.desktop.client.daemon.task;
 
 import ru.s4m1d.notes.app.desktop.client.model.note.Note;
 

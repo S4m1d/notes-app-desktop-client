@@ -1,4 +1,4 @@
-package ru.s4m1d.notes.app.desktop.client.controller.notes.mapper;
+package ru.s4m1d.notes.app.desktop.client.daemon.notes.mapper;
 
 import ru.s4m1d.notes.app.desktop.client.model.content.FileContent;
 import ru.s4m1d.notes.app.desktop.client.model.note.Note;

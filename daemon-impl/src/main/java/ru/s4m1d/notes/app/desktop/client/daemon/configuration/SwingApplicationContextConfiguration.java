@@ -1,4 +1,4 @@
-package ru.s4m1d.notes.app.desktop.client.controller.configuration;
+package ru.s4m1d.notes.app.desktop.client.daemon.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
