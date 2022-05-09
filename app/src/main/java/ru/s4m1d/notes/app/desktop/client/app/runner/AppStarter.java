@@ -14,12 +14,12 @@ import ru.s4m1d.notes.app.desktop.client.presenter.notes.NotesBarServiceImpl;
 import ru.s4m1d.notes.app.desktop.client.daemon.task.workspace.WorkspaceObserver;
 import ru.s4m1d.notes.app.desktop.client.daemon.task.workspace.WorkspaceService;
 import ru.s4m1d.notes.app.desktop.client.daemon.task.workspace.WorkspaceWorker;
-import ru.s4m1d.notes.app.desktop.client.view.*;
-import ru.s4m1d.notes.app.desktop.client.view.MenuBar;
-import ru.s4m1d.notes.app.desktop.client.view.choice.bar.NotesBarLayeredPane;
-import ru.s4m1d.notes.app.desktop.client.view.choice.bar.NotesPane;
-import ru.s4m1d.notes.app.desktop.client.view.workspace.TextEditorPane;
-import ru.s4m1d.notes.app.desktop.client.view.workspace.WorkSpaceLayeredPane;
+import ru.s4m1d.notes.app.desktop.client.view.components.MainFrame;
+import ru.s4m1d.notes.app.desktop.client.view.components.MenuBar;
+import ru.s4m1d.notes.app.desktop.client.view.components.choice.bar.NotesBarLayeredPane;
+import ru.s4m1d.notes.app.desktop.client.view.components.choice.bar.NotesPane;
+import ru.s4m1d.notes.app.desktop.client.view.components.workspace.TextEditorPane;
+import ru.s4m1d.notes.app.desktop.client.view.components.workspace.WorkSpaceLayeredPane;
 
 import javax.swing.*;
 import java.awt.*;

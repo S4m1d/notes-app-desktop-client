@@ -1,8 +1,8 @@
 package ru.s4m1d.notes.app.desktop.client.presenter.notes;
 
 import ru.s4m1d.notes.app.desktop.client.model.note.Note;
-import ru.s4m1d.notes.app.desktop.client.view.choice.bar.NoteTab;
-import ru.s4m1d.notes.app.desktop.client.view.choice.bar.NotesPane;
+import ru.s4m1d.notes.app.desktop.client.view.components.choice.bar.NoteTab;
+import ru.s4m1d.notes.app.desktop.client.view.components.choice.bar.NotesPane;
 import ru.s4m1d.notes.app.desktop.client.core.Observer;
 import ru.s4m1d.notes.app.desktop.client.presenter.mainframe.NewComponentEvent;
 

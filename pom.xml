@@ -21,6 +21,7 @@
         <module>model</module>
         <module>presenter</module>
         <module>presenter-api</module>
+        <module>view-api</module>
     </modules>
 
     <properties>
