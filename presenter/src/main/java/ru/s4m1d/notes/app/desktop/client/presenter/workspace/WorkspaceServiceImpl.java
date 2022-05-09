@@ -1,4 +1,4 @@
-package ru.s4m1d.notes.app.desktop.client.daemon.task.workspace;
+package ru.s4m1d.notes.app.desktop.client.presenter.workspace;
 
 import lombok.AllArgsConstructor;
 import ru.s4m1d.notes.app.desktop.client.model.context.WorkspaceContext;
@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 @AllArgsConstructor
-public class WorkspaceService {
+public class WorkspaceServiceImpl implements WorkspaceService {
     private WorkSpaceLayeredPane workSpaceLayeredPane;
     private WorkspaceContext workspaceContext;
 

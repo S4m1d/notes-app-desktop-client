@@ -1,7 +1,10 @@
-package ru.s4m1d.notes.app.desktop.client.presenter.notes;
+package ru.s4m1d.notes.app.desktop.client.daemon.task.notes;
 
 import ru.s4m1d.notes.app.desktop.client.model.note.Note;
 import ru.s4m1d.notes.app.desktop.client.core.Observer;
+import ru.s4m1d.notes.app.desktop.client.presenter.notes.NotesReceivedEvent;
+import ru.s4m1d.notes.app.desktop.client.presenter.notes.NotesSearchService;
+import ru.s4m1d.notes.app.desktop.client.presenter.notes.NotesSearchServiceImpl;
 
 import javax.swing.*;
 import java.util.List;

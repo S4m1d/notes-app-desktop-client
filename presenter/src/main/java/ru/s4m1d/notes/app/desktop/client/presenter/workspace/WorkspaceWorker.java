@@ -1,4 +1,4 @@
-package ru.s4m1d.notes.app.desktop.client.daemon.task.workspace;
+package ru.s4m1d.notes.app.desktop.client.presenter.workspace;
 
 import lombok.AllArgsConstructor;
 
@@ -6,7 +6,7 @@ import javax.swing.*;
 
 @AllArgsConstructor
 public class WorkspaceWorker extends SwingWorker<Void, Void> {
-    private WorkspaceService workspaceService;
+    private WorkspaceServiceImpl workspaceService;
 
     @Override
     protected Void doInBackground() throws Exception {

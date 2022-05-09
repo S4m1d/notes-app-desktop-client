@@ -1,4 +1,4 @@
-package ru.s4m1d.notes.app.desktop.client.presenter.service;
+package ru.s4m1d.notes.app.desktop.client.presenter.context;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

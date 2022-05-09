@@ -9,11 +9,11 @@ import ru.s4m1d.notes.app.desktop.client.model.context.NotesContext;
 import ru.s4m1d.notes.app.desktop.client.model.context.WorkspaceContext;
 import ru.s4m1d.notes.app.desktop.client.presenter.mainframe.MainFrameStateService;
 import ru.s4m1d.notes.app.desktop.client.daemon.task.context.ContextInitializationTask;
-import ru.s4m1d.notes.app.desktop.client.presenter.notes.NotesMonitoringServiceImpl;
+import ru.s4m1d.notes.app.desktop.client.daemon.task.notes.NotesMonitoringServiceImpl;
 import ru.s4m1d.notes.app.desktop.client.presenter.notes.NotesBarServiceImpl;
-import ru.s4m1d.notes.app.desktop.client.daemon.task.workspace.WorkspaceObserver;
-import ru.s4m1d.notes.app.desktop.client.daemon.task.workspace.WorkspaceService;
-import ru.s4m1d.notes.app.desktop.client.daemon.task.workspace.WorkspaceWorker;
+import ru.s4m1d.notes.app.desktop.client.presenter.workspace.WorkspaceObserver;
+import ru.s4m1d.notes.app.desktop.client.presenter.workspace.WorkspaceServiceImpl;
+import ru.s4m1d.notes.app.desktop.client.presenter.workspace.WorkspaceWorker;
 import ru.s4m1d.notes.app.desktop.client.view.components.MainFrame;
 import ru.s4m1d.notes.app.desktop.client.view.components.MenuBar;
 import ru.s4m1d.notes.app.desktop.client.view.components.choice.bar.NotesBarLayeredPane;
@@ -28,7 +28,7 @@ import java.awt.*;
 @ComponentScan("ru.s4m1d")
 public class AppStarter {
 
-    public static void createGui(ApplicationContext applicationContext){
+    public static void createGui(){
 
         MainFrame mainFrame = new MainFrame();
         mainFrame.initialize();
@@ -58,7 +58,7 @@ public class AppStarter {
 
         WorkspaceObserver workspaceObserver = new WorkspaceObserver(
                 new WorkspaceWorker(
-                        new WorkspaceService(workspaceScrollPane, swingApplicationContext.getWorkspaceContext())
+                        new WorkspaceServiceImpl(workspaceScrollPane, swingApplicationContext.getWorkspaceContext())
                 )
         );
         swingApplicationContext.getWorkspaceContext().addObserver(workspaceObserver);
@@ -76,11 +76,10 @@ public class AppStarter {
     }
 
     public static void main(String args[]) {
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppStarter.class);
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                createGui(applicationContext);
+                createGui();
             }
         });
     }

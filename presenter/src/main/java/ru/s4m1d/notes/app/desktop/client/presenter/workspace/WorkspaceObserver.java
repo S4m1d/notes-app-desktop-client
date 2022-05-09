@@ -1,4 +1,4 @@
-package ru.s4m1d.notes.app.desktop.client.daemon.task.workspace;
+package ru.s4m1d.notes.app.desktop.client.presenter.workspace;
 
 import lombok.AllArgsConstructor;
 import ru.s4m1d.notes.app.desktop.client.core.Event;

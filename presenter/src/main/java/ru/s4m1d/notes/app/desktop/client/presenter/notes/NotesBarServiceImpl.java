@@ -8,28 +8,38 @@ import ru.s4m1d.notes.app.desktop.client.presenter.mainframe.NewComponentEvent;
 
 import java.util.List;
 
-public class NotesBarServiceImpl extends Observer<NotesReceivedEvent> implements NotesBarUpdateService {
+public class NotesBarServiceImpl extends Observer<NotesReceivedEvent> implements NotesBarService {
     private NotesPane notesPane;
-    private NotesBarUpdateServiceObservable notesBarUpdateServiceObservable;
+    private NotesBarServiceObservable notesBarServiceObservable;
 
     public NotesBarServiceImpl(NotesPane notesPane){
         this.notesPane = notesPane;
-        this.notesBarUpdateServiceObservable = new NotesBarUpdateServiceObservable();
+        this.notesBarServiceObservable = new NotesBarServiceObservable();
     }
 
     @Override
     public void processEvent(NotesReceivedEvent notesReceivedEvent) {
         List<Note> notes = notesReceivedEvent.getNotes();
-        for (Note note:notes){
-            NoteTab noteTab = new NoteTab();
-            noteTab.setNotesName(note.getName());
-            notesPane.add(noteTab);
-            noteTab.initialize();
-        }
-        notesBarUpdateServiceObservable.fireEvent(new NewComponentEvent());
+        addNotes(notes);
+        notesBarServiceObservable.fireEvent(new NewComponentEvent());
     }
 
     public void addObserver(Observer<NewComponentEvent> observer){
-        notesBarUpdateServiceObservable.addObserver(observer);
+        notesBarServiceObservable.addObserver(observer);
+    }
+
+    @Override
+    public void addNotes(List<Note> notes) {
+        for (Note note: notes) {
+            addNote(note);
+        }
+    }
+
+    @Override
+    public void addNote(Note note) {
+        NoteTab noteTab = new NoteTab();
+        noteTab.setNotesName(note.getName());
+        notesPane.add(noteTab);
+        noteTab.initialize();
     }
 }
