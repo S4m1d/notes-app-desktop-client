@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>app</artifactId>
+    <artifactId>presenter</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -24,12 +24,22 @@
         </dependency>
         <dependency>
             <groupId>ru.s4m1d</groupId>
-            <artifactId>daemon-impl</artifactId>
+            <artifactId>util</artifactId>
             <version>${parent.version}</version>
         </dependency>
         <dependency>
             <groupId>ru.s4m1d</groupId>
-            <artifactId>presenter</artifactId>
+            <artifactId>system-impl</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>ru.s4m1d</groupId>-->
+<!--            <artifactId>daemon-impl</artifactId>-->
+<!--            <version>${parent.version}</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>ru.s4m1d</groupId>
+            <artifactId>presenter-api</artifactId>
             <version>${parent.version}</version>
         </dependency>
     </dependencies>

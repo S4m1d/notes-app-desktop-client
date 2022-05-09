@@ -2,8 +2,8 @@ package ru.s4m1d.notes.app.desktop.client.daemon.task.context;
 
 import ru.s4m1d.notes.app.desktop.client.model.context.SwingApplicationContext;
 import ru.s4m1d.notes.app.desktop.client.model.note.Note;
-import ru.s4m1d.notes.app.desktop.client.daemon.task.NotesSearchService;
-import ru.s4m1d.notes.app.desktop.client.daemon.notes.NotesSearchServiceImpl;
+import ru.s4m1d.notes.app.desktop.client.presenter.notes.NotesSearchService;
+import ru.s4m1d.notes.app.desktop.client.presenter.notes.NotesSearchServiceImpl;
 
 import javax.swing.*;
 import java.util.List;

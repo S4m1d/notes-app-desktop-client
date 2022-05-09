@@ -19,6 +19,8 @@
         <module>core-api</module>
         <module>util</module>
         <module>model</module>
+        <module>presenter</module>
+        <module>presenter-api</module>
     </modules>
 
     <properties>
