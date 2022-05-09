@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>app</module>
-        <module>components</module>
+        <module>view</module>
         <module>system-api</module>
         <module>system-impl</module>
         <module>daemon-api</module>

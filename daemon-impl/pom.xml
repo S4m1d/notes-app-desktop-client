@@ -34,7 +34,7 @@
         </dependency>
         <dependency>
             <groupId>ru.s4m1d</groupId>
-            <artifactId>components</artifactId>
+            <artifactId>view</artifactId>
             <version>${parent.version}</version>
         </dependency>
         <dependency>

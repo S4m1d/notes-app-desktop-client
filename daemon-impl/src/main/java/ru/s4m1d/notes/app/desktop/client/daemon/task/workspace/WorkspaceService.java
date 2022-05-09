@@ -2,7 +2,7 @@ package ru.s4m1d.notes.app.desktop.client.daemon.task.workspace;
 
 import lombok.AllArgsConstructor;
 import ru.s4m1d.notes.app.desktop.client.model.context.WorkspaceContext;
-import ru.s4m1d.notes.app.desktop.client.components.workspace.WorkSpaceLayeredPane;
+import ru.s4m1d.notes.app.desktop.client.view.workspace.WorkSpaceLayeredPane;
 
 import javax.swing.text.DefaultStyledDocument;
 import java.io.IOException;

@@ -10,16 +10,16 @@ import ru.s4m1d.notes.app.desktop.client.model.context.WorkspaceContext;
 import ru.s4m1d.notes.app.desktop.client.presenter.mainframe.MainFrameStateService;
 import ru.s4m1d.notes.app.desktop.client.daemon.task.context.ContextInitializationTask;
 import ru.s4m1d.notes.app.desktop.client.presenter.notes.NotesMonitoringServiceImpl;
-import ru.s4m1d.notes.app.desktop.client.presenter.notes.NotesBarUpdateServiceImpl;
+import ru.s4m1d.notes.app.desktop.client.presenter.notes.NotesBarServiceImpl;
 import ru.s4m1d.notes.app.desktop.client.daemon.task.workspace.WorkspaceObserver;
 import ru.s4m1d.notes.app.desktop.client.daemon.task.workspace.WorkspaceService;
 import ru.s4m1d.notes.app.desktop.client.daemon.task.workspace.WorkspaceWorker;
-import ru.s4m1d.notes.app.desktop.client.components.*;
-import ru.s4m1d.notes.app.desktop.client.components.MenuBar;
-import ru.s4m1d.notes.app.desktop.client.components.choice.bar.NotesBarLayeredPane;
-import ru.s4m1d.notes.app.desktop.client.components.choice.bar.NotesPane;
-import ru.s4m1d.notes.app.desktop.client.components.workspace.TextEditorPane;
-import ru.s4m1d.notes.app.desktop.client.components.workspace.WorkSpaceLayeredPane;
+import ru.s4m1d.notes.app.desktop.client.view.*;
+import ru.s4m1d.notes.app.desktop.client.view.MenuBar;
+import ru.s4m1d.notes.app.desktop.client.view.choice.bar.NotesBarLayeredPane;
+import ru.s4m1d.notes.app.desktop.client.view.choice.bar.NotesPane;
+import ru.s4m1d.notes.app.desktop.client.view.workspace.TextEditorPane;
+import ru.s4m1d.notes.app.desktop.client.view.workspace.WorkSpaceLayeredPane;
 
 import javax.swing.*;
 import java.awt.*;
@@ -68,7 +68,7 @@ public class AppStarter {
         contextInitializationTask.execute();
 
         NotesMonitoringServiceImpl notesMonitoringService = new NotesMonitoringServiceImpl();
-        NotesBarUpdateServiceImpl notesPaneUpdateService = new NotesBarUpdateServiceImpl(notesPane);
+        NotesBarServiceImpl notesPaneUpdateService = new NotesBarServiceImpl(notesPane);
         MainFrameStateService mainFrameStateService = new MainFrameStateService(mainFrame);
         notesPaneUpdateService.addObserver(mainFrameStateService);
         notesMonitoringService.addObserver(notesPaneUpdateService);
