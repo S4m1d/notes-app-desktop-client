@@ -10,14 +10,21 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>app</module>
-        <module>components</module>
+        <module>view</module>
         <module>system-api</module>
         <module>system-impl</module>
-        <module>business-api</module>
-        <module>business-impl</module>
+        <module>daemon-api</module>
+        <module>daemon-impl</module>
         <module>core</module>
         <module>core-api</module>
         <module>util</module>
+        <module>model</module>
+        <module>presenter</module>
+        <module>presenter-api</module>
+        <module>view-api</module>
+        <module>dto</module>
+        <module>model-api</module>
+        <module>initialization-tasks</module>
     </modules>
 
     <properties>
@@ -42,7 +49,6 @@
             <artifactId>spring-context</artifactId>
             <version>5.2.20.RELEASE</version>
         </dependency>
-
     </dependencies>
 
 </project>

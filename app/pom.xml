@@ -19,12 +19,27 @@
     <dependencies>
         <dependency>
             <groupId>ru.s4m1d</groupId>
-            <artifactId>components</artifactId>
+            <artifactId>view</artifactId>
             <version>${parent.version}</version>
         </dependency>
         <dependency>
             <groupId>ru.s4m1d</groupId>
-            <artifactId>business-impl</artifactId>
+            <artifactId>daemon-impl</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ru.s4m1d</groupId>
+            <artifactId>presenter</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ru.s4m1d</groupId>
+            <artifactId>core</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ru.s4m1d</groupId>
+            <artifactId>initialization-tasks</artifactId>
             <version>${parent.version}</version>
         </dependency>
     </dependencies>
