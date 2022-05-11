@@ -32,6 +32,16 @@
             <artifactId>presenter</artifactId>
             <version>${parent.version}</version>
         </dependency>
+        <dependency>
+            <groupId>ru.s4m1d</groupId>
+            <artifactId>core</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ru.s4m1d</groupId>
+            <artifactId>initialization-tasks</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
     </dependencies>
 
 </project>

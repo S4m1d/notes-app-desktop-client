@@ -16,4 +16,12 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>ru.s4m1d</groupId>
+            <artifactId>dto</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+    </dependencies>
+
 </project>

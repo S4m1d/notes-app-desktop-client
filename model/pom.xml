@@ -22,6 +22,16 @@
             <artifactId>core</artifactId>
             <version>${parent.version}</version>
         </dependency>
+        <dependency>
+            <groupId>ru.s4m1d</groupId>
+            <artifactId>model-api</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ru.s4m1d</groupId>
+            <artifactId>presenter-api</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
     </dependencies>
 
 </project>

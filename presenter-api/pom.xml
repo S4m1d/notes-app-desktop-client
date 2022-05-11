@@ -19,7 +19,12 @@
     <dependencies>
         <dependency>
             <groupId>ru.s4m1d</groupId>
-            <artifactId>model</artifactId>
+            <artifactId>dto</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ru.s4m1d</groupId>
+            <artifactId>core</artifactId>
             <version>${parent.version}</version>
         </dependency>
     </dependencies>

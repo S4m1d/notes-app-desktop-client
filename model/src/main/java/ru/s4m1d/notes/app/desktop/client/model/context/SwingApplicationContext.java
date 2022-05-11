@@ -8,6 +8,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class SwingApplicationContext {
-    private WorkspaceContext workspaceContext;
+    private RedactorContext redactorContext;
     private NotesContext notesContext;
 }
