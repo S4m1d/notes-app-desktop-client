@@ -1,4 +1,4 @@
-package ru.s4m1d.notes.app.desktop.client.app.runner;
+package ru.s4m1d.notes.app.desktop.client.app.launch;
 
 import ru.s4m1d.notes.app.desktop.client.app.configuration.InitialTasksConfiguration;
 import ru.s4m1d.notes.app.desktop.client.app.configuration.ModelConfiguration;
